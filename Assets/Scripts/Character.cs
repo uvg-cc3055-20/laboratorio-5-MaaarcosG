@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Character : MonoBehaviour {
-
+    /*Atributos agregados*/
+    public GameObject feet;
+    public LayerMask layerMask;
 
     Rigidbody2D rb2d;
     SpriteRenderer sr;
@@ -34,7 +36,12 @@ public class Character : MonoBehaviour {
         sr.flipX = !facingRight;
 
         if (Input.GetButtonDown("Jump")) {
-            rb2d.AddForce(Vector2.up*jumpForce);
+            
+            RaycastHit2D raycast = Physics2D.Raycast(feet.transform.position, Vector2.down, 0.1f, layerMask);
+            if(raycast.collider != null)
+            {
+                rb2d.AddForce(Vector2.up * jumpForce);
+            }
         }
 	}
 }

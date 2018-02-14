@@ -1224,6 +1224,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &505030957 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1806655619607636, guid: dac26cfd90c41fe498ff2f89f4b2cc8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 566357922}
 --- !u!1001 &566357922
 Prefab:
   m_ObjectHideFlags: 0
@@ -1263,6 +1268,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114779152422578414, guid: dac26cfd90c41fe498ff2f89f4b2cc8c,
+        type: 2}
+      propertyPath: layerMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 114779152422578414, guid: dac26cfd90c41fe498ff2f89f4b2cc8c,
+        type: 2}
+      propertyPath: feet
+      value: 
+      objectReference: {fileID: 505030957}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dac26cfd90c41fe498ff2f89f4b2cc8c, type: 2}
   m_IsPrefabParent: 0
