@@ -22,7 +22,7 @@ public class AreaEffector : MonoBehaviour {
         time = time + Time.deltaTime;
 
         /*Condicion para desactivar el AreaEffector*/
-        if(time >= 3f)
+        if(time >= 1.9f)
         {
             active = !active;
             child.gameObject.SetActive(active);
